@@ -1,0 +1,48 @@
+/* Style for the whole BorderPane */
+.root {
+    -fx-background-color: #f0f8ff;
+    -fx-padding: 20px;
+}
+
+/* Title text style */
+.text {
+    -fx-fill: #333;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b0c4de;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5px;
+    -fx-prompt-text-fill: #a9a9a9;
+}
+
+/* Label error message styling */
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: red;
+}
+
+/* Add button styling */
+.button {
+    -fx-background-color: #4682b4;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #4682b4;
+    -fx-padding: 5px 10px;
+}
+
+.button:hover {
+    -fx-background-color: #5a9bd3;
+}
+
+.button:pressed {
+    -fx-background-color: #3c6e8f;
+}

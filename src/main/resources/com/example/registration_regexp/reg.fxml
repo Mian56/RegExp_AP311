@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registration_regexp.regController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <!-- First Name Field and Error Label -->
+                <TextField fx:id="fname_tf" layoutX="150.0" layoutY="30.0" promptText="First Name" />
+                <Label fx:id="fname_error" layoutX="200.0" layoutY="25.0" textFill="red" />
+
+                <!-- Last Name Field and Error Label -->
+                <TextField fx:id="lname_tf" layoutX="150.0" layoutY="84.0" promptText="Last Name" />
+                <Label fx:id="lname_error" layoutX="200.0" layoutY="79.0" textFill="red" />
+
+                <!-- Email Field and Error Label -->
+                <TextField fx:id="gmail_tf" layoutX="150.0" layoutY="147.0" promptText="Email" />
+                <Label fx:id="email_error" layoutX="200.0" layoutY="135.0" textFill="red" />
+
+                <!-- Date of Birth Field and Error Label -->
+                <TextField fx:id="DOB_tf" layoutX="150.0" layoutY="196.0" promptText="Date of Birth (MM/DD/YYYY)" />
+                <Label fx:id="dob_error" layoutX="200.0" layoutY="209.0" textFill="red" />
+
+                <!-- Zip Code Field and Error Label -->
+                <TextField fx:id="zip_tf" layoutX="150.0" layoutY="257.0" promptText="Zip Code" />
+                <Label fx:id="zip_error" layoutX="200.0" layoutY="272.0" textFill="red" />
+
+                <!-- Add Button -->
+                <Button fx:id="add_button" layoutX="417.0" layoutY="216.0" mnemonicParsing="false" onAction="#handle_add" prefWidth="98.0" text="Add" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="198.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>
